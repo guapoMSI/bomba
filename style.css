@@ -1,0 +1,88 @@
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      background-color: yellowgreen;
+  }
+  
+  article {
+    background-color: blueviolet;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    animation: break 6s ease-in-out forwards;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  @keyframes break {
+    50% {
+      rotate: 0deg;
+      color: rgb(255, 238, 0);
+    }
+  
+    54% {
+      rotate: -4deg;
+      color: red;
+    }
+    56% {
+      rotate: 4deg;
+      color: black;
+    }
+  
+    58% {
+      rotate: -4deg;
+      color: rgb(238, 255, 0);
+    }
+  
+    80% {
+      rotate: 6deg;
+      color: red;
+    }
+  
+    90% {
+      rotate: -6deg;
+      color: black;
+    }
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  #bomb {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation-name: bomba;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    background-size: contain;
+    opacity: 0;
+    animation-timing-function: linear;
+    background-image: url("https://media.tenor.com/ojDYbnx4As8AAAAj/dm4uz3-foekoe.gif");
+  }
+  
+  @keyframes bomba {
+    0% {
+      opacity: 1;
+      left: 0px;
+      top: 0px;
+      background-image: url("https://media.tenor.com/ojDYbnx4As8AAAAj/dm4uz3-foekoe.gif");
+    }
+  
+    45% {
+      background-image: url("https://media.tenor.com/ojDYbnx4As8AAAAj/dm4uz3-foekoe.gif");
+    }
+  
+    50% {
+      top: 80vh;
+      opacity: 1;
+      background-image: url("https://media.tenor.com/ojDYbnx4As8AAAAj/dm4uz3-foekoe.gif");
+    }
+  
+    70% {
+      top: 80vh;
+      opacity: 0;
+      background-image: url("https://media.tenor.com/ojDYbnx4As8AAAAj/dm4uz3-foekoe.gif");
+    }
